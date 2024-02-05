@@ -1,11 +1,12 @@
 import requests
 import datetime
-from config import weather_api_key, tg_bot_token
+# from config import weather_api_key, tg_bot_token
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram import executor
 
-
+weather_api_key = "4b1ba4a5df282e1523b183ee6c11ab65"
+tg_bot_token = "6758413307:AAHagVHKLTgoqH42nECVFyTqr4rij1njYgM"
 bot = Bot(token=tg_bot_token)
 dp = Dispatcher(bot)
 
