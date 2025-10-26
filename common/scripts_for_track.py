@@ -3,10 +3,12 @@ import requests
 from bs4 import BeautifulSoup
 
 tracks_dict = {
-    'Заветы-Ильича--Ярославский Вокзал': 'zavety-ilicha--moskva-yaroslavskaya',
-    'Ярославский Вокзал--Заветы-Ильича': 'moskva-yaroslavskaya--zavety-ilicha',
-    'Заветы-Ильича--Пушкино': 'zavety-ilicha--pushkino,moskovskaya-obl',
-    'Пушкино--Заветы-Ильича': 'pushkino,moskovskaya-obl--zavety-ilicha',
+    'Заветы Ильича > Ярославский Вокзал': 'zavety-ilicha--moskva-yaroslavskaya',
+    'Ярославский Вокзал > Заветы Ильича': 'moskva-yaroslavskaya--zavety-ilicha',
+    'Заветы Ильича > Пушкино': 'zavety-ilicha--pushkino,moskovskaya-obl',
+    'Пушкино > Заветы Ильича': 'pushkino,moskovskaya-obl--zavety-ilicha',
+    'Заветы Ильича > Ростокино': 'zavety-ilicha--severyanin',
+    'Ростокино > Заветы Ильича': 'severyanin--zavety-ilicha'
 }
 
 def get_trips(track):
@@ -22,10 +24,5 @@ def get_trips(track):
     current_trips = [f"[+] Отправление: {str(x[0])}  ➡️  " + f"Прибытие: {str(x[1])}" for x in all_trips if x[0] > hour][:5]
     return '\n'.join(current_trips)
 
-
-
-
-
-get_trips('Заветы-Ильича--Ярославский Вокзал')
 
 

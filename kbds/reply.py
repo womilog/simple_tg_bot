@@ -2,7 +2,7 @@ from aiogram.types import KeyboardButton
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
 
-def get_keyboard(
+def get_reply_keyboard(
         *btns: str,
         placeholder: str = None,
         request_contact: int = None,
