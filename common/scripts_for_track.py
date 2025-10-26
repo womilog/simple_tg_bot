@@ -8,7 +8,10 @@ tracks_dict = {
     'Заветы Ильича > Пушкино': 'zavety-ilicha--pushkino,moskovskaya-obl',
     'Пушкино > Заветы Ильича': 'pushkino,moskovskaya-obl--zavety-ilicha',
     'Заветы Ильича > Ростокино': 'zavety-ilicha--severyanin',
-    'Ростокино > Заветы Ильича': 'severyanin--zavety-ilicha'
+    'Заветы Ильича > Софрино': 'zavety-ilicha--sofrino',
+    'Софрино > Заветы Ильича': 'sofrino--zavety-ilicha',
+    'Софрино > Ярославский Вокзал': 'sofrino--moskva-yaroslavskaya',
+    'Ярославский Вокзал > Софрино': 'moskva-yaroslavskaya--sofrino'
 }
 
 def get_trips(track):
